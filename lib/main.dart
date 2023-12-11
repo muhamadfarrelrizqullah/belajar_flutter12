@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:async/async.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
-import 'package:books/navigation_first.dart';
+import 'package:books/navigation_dialog.dart';
 
 void main() {
   runApp(const MainApp());
@@ -19,7 +19,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity),
-      home: const NavigationFirst(),
+      home: const NavigationDialogScreen(),
     );
   }
 }
